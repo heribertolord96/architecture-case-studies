@@ -24,7 +24,7 @@ Each document abstracts proprietary business logic and client identities to focu
 * **Core Stack:** React 18, Redux Toolkit, TanStack Query, Material UI, Vite, Laravel Echo, Playwright.
 * **Key Architectural Patterns:** Domain-sliced client state management, runtime tenant-aware API resolution, decoupled WebSocket subscription lifecycles, and standalone IIFE embeddable widget builds.
 
-### 4. [LAN Media Playback & Casting Client (Flutter Mobile App)]('./lan-media-casting-client.md)
+### 4. [LAN Media Playback & Casting Client (Flutter Mobile App)](./lan-media-casting-client.md)
 * **Domain:** Cross-Platform Mobile Engineering, Local Network Protocols & Edge Streaming
 * **Core Stack:** Dart 3, Flutter, Riverpod, `go_router`, `shelf` (Local HTTP Proxy), mDNS/DLNA helper libraries, native Android background services.
 * **Key Architectural Patterns:** Protocol adapter pattern for heterogeneous casting receivers, device-local HTTP media proxying, heuristic URL classification for web streams, and app-scoped asynchronous queue/cache states.
