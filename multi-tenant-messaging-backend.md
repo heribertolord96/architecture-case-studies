@@ -87,3 +87,11 @@ flowchart TD
     Redis -->|Broadcast Delivery| Realtime
     Realtime -->|Live Updates| UI
     App -->|Synchronous Response| Client
+
+```
+
+## 5. Quality Assurance & Deployment
+
+* **Automated Testing:** PHPUnit separates Unit and Feature suites with dedicated central and tenant-aware test base classes. Playwright executes Chromium end-to-end test suites covering authenticated and guest flows with failure traces and screenshots.
+* **Continuous Integration:** GitHub Actions provisions MariaDB services, enforces code formatting via Laravel Pint, and runs isolated test suites before artifact promotion.
+* **Containerization & Deployment:** Docker Compose orchestrates the application runtime alongside MariaDB, Redis, and Soketi. Deployment pipelines enforce SSH preflight checks, automated test gates, and controlled release stages with environment-injected secrets.
