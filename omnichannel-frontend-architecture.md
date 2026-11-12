@@ -15,7 +15,6 @@ The inventory below reflects dependencies and build/deployment configuration in 
 - **Queues / workers:** No queue broker or background-worker runtime is defined in this repository. Asynchronous client requests and browser event handling are not server-side workers.
 - **Realtime:** A hosted publish/subscribe client and Laravel Echo-compatible client support live connection and event handling. The realtime service itself is external to this repository.
 - **DevOps / testing:** Node.js and Vite build tooling; a Dockerfile; a staged CI pipeline that builds static assets, packages an artifact, and transfers it to a web-hosting target; ESLint and Prettier; Node-based focused tests and Playwright end-to-end tests across desktop and mobile browser profiles.
-- **Developer tooling:** A separate Node.js package contains Model Context Protocol and browser-automation integrations; it is kept outside the main app dependency bundle.
 
 ## 3. Core Architectural Decisions
 
